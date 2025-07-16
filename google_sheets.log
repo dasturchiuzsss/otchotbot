@@ -1,0 +1,1328 @@
+2025-07-13 20:35:48,688 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 20:35:48,688 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 20:35:48,688 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 20:35:48,690 - root - INFO - Admin router initialized successfully
+2025-07-13 20:35:48,692 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 20:35:48,855 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 20:35:48,856 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 20:35:49,299 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 20:35:58,104 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 20:35:58,105 - aiogram.event - INFO - Update id=654608053 is handled. Duration 413 ms by bot id=7637077946
+2025-07-13 20:36:07,786 - aiogram.event - INFO - Update id=654608054 is handled. Duration 362 ms by bot id=7637077946
+2025-07-13 20:36:12,240 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 20:36:15,846 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 20:36:16,218 - root - INFO - 📋 Worksheet topildi: 'malumot'
+2025-07-13 20:36:16,607 - root - INFO - 🔧 Sarlavhalar yangilanmoqda...
+2025-07-13 20:36:19,896 - root - INFO - ✅ Sarlavhalar muvaffaqiyatli formatlandi
+2025-07-13 20:36:19,925 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 20:36:21,016 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 20:36:22,440 - root - INFO - 📋 Worksheet topildi: 'malumot'
+2025-07-13 20:36:30,310 - root - INFO - ✅ Hisobot #1 muvaffaqiyatli saqlandi: TEST - Sotuvchi - TEST - Samsung Galaxy A54 128GB
+2025-07-13 20:36:31,787 - aiogram.event - INFO - Update id=654608055 is not handled. Duration 19596 ms by bot id=7637077946
+2025-07-13 20:36:31,787 - aiogram.event - ERROR - Cause exception while process update id=654608055 by bot id=7637077946
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 862, in test_google_sheets
+    await callback_query.answer("✅ Test muvaffaqiyatli bajarildi! Test ma'lumotlari qo'shildi.", show_alert=True)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\bot.py", line 453, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+2025-07-13 20:38:05,258 - aiogram.event - INFO - Update id=654608056 is handled. Duration 1400 ms by bot id=7637077946
+2025-07-13 20:38:09,915 - aiogram.event - INFO - Update id=654608057 is handled. Duration 815 ms by bot id=7637077946
+2025-07-13 20:38:15,677 - aiogram.event - INFO - Update id=654608058 is handled. Duration 848 ms by bot id=7637077946
+2025-07-13 20:38:17,559 - aiogram.event - INFO - Update id=654608059 is handled. Duration 535 ms by bot id=7637077946
+2025-07-13 20:38:24,248 - aiogram.event - INFO - Update id=654608060 is handled. Duration 604 ms by bot id=7637077946
+2025-07-13 20:38:28,932 - aiogram.event - INFO - Update id=654608061 is handled. Duration 886 ms by bot id=7637077946
+2025-07-13 20:38:36,544 - aiogram.event - INFO - Update id=654608062 is handled. Duration 497 ms by bot id=7637077946
+2025-07-13 20:38:44,471 - aiogram.event - INFO - Update id=654608063 is handled. Duration 513 ms by bot id=7637077946
+2025-07-13 20:38:51,064 - root - INFO - Sales report for user 7000454062 added to database.
+2025-07-13 20:38:51,239 - aiogram.event - INFO - Update id=654608064 is handled. Duration 1714 ms by bot id=7637077946
+2025-07-13 20:39:01,113 - aiogram.event - INFO - Update id=654608065 is handled. Duration 147 ms by bot id=7637077946
+2025-07-13 20:39:13,580 - root - INFO - Report status updated to 'confirmed' for group_message_id 31.
+2025-07-13 20:39:14,146 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 20:39:15,333 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 20:39:15,696 - root - INFO - 📋 Worksheet topildi: 'malumot'
+2025-07-13 20:39:19,411 - root - INFO - ✅ Hisobot #2 muvaffaqiyatli saqlandi: 𝐄𝐭𝐡𝐢𝐜𝐚𝐥 𝐑𝐨𝐨𝐁𝐨𝐭 | - Game Station
+2025-07-13 20:39:19,411 - root - INFO - Report successfully saved to Google Sheets: 1jUq-5PkBErhTEV4kBdy1TtpZ0-JDcEUj6AApTkObTN8/malumot
+2025-07-13 20:39:19,411 - aiogram.event - INFO - Update id=654608066 is handled. Duration 6001 ms by bot id=7637077946
+2025-07-13 20:41:36,009 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-13 20:41:36,010 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7637077946)
+2025-07-13 20:41:47,642 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7637077946)
+2025-07-13 20:42:11,807 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 20:42:12,060 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 20:42:12,060 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 20:42:12,062 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 20:42:14,859 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 20:42:14,859 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 20:42:14,859 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 20:42:14,862 - root - INFO - Admin router initialized successfully
+2025-07-13 20:42:14,863 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 20:42:15,026 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 20:42:15,026 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 20:42:15,680 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 20:42:56,547 - aiogram.event - INFO - Update id=654608067 is handled. Duration 916 ms by bot id=7637077946
+2025-07-13 20:43:01,151 - aiogram.event - INFO - Update id=654608068 is handled. Duration 547 ms by bot id=7637077946
+2025-07-13 20:43:05,714 - aiogram.event - INFO - Update id=654608069 is handled. Duration 495 ms by bot id=7637077946
+2025-07-13 20:43:17,355 - aiogram.event - INFO - Update id=654608070 is handled. Duration 1742 ms by bot id=7637077946
+2025-07-13 20:43:20,765 - aiogram.event - INFO - Update id=654608071 is handled. Duration 641 ms by bot id=7637077946
+2025-07-13 20:43:25,219 - aiogram.event - INFO - Update id=654608072 is handled. Duration 456 ms by bot id=7637077946
+2025-07-13 20:43:33,722 - aiogram.event - INFO - Update id=654608073 is handled. Duration 584 ms by bot id=7637077946
+2025-07-13 20:43:39,208 - root - INFO - Sales report for user 7000454062 added to database.
+2025-07-13 20:43:39,358 - aiogram.event - INFO - Update id=654608074 is handled. Duration 750 ms by bot id=7637077946
+2025-07-13 20:43:43,895 - root - INFO - Report status updated to 'confirmed' for group_message_id 32.
+2025-07-13 20:43:44,084 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 20:43:45,348 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 20:43:45,729 - root - INFO - 📋 Worksheet topildi: 'malumot'
+2025-07-13 20:43:49,876 - root - INFO - ✅ Hisobot #3 muvaffaqiyatli saqlandi: /admin - Game Box
+2025-07-13 20:43:49,876 - root - INFO - Report successfully saved to Google Sheets: 1jUq-5PkBErhTEV4kBdy1TtpZ0-JDcEUj6AApTkObTN8/malumot
+2025-07-13 20:43:49,877 - aiogram.event - INFO - Update id=654608075 is handled. Duration 6223 ms by bot id=7637077946
+2025-07-13 20:44:13,766 - aiogram.event - INFO - Update id=654608076 is handled. Duration 171 ms by bot id=7637077946
+2025-07-13 20:44:16,468 - aiogram.event - INFO - Update id=654608077 is handled. Duration 1672 ms by bot id=7637077946
+2025-07-13 20:44:18,306 - aiogram.event - INFO - Update id=654608078 is handled. Duration 716 ms by bot id=7637077946
+2025-07-13 20:44:20,954 - aiogram.event - INFO - Update id=654608079 is handled. Duration 682 ms by bot id=7637077946
+2025-07-13 20:44:21,762 - aiogram.event - INFO - Update id=654608080 is handled. Duration 517 ms by bot id=7637077946
+2025-07-13 20:44:31,475 - aiogram.event - INFO - Update id=654608081 is handled. Duration 548 ms by bot id=7637077946
+2025-07-13 20:44:58,028 - aiogram.event - INFO - Update id=654608082 is handled. Duration 481 ms by bot id=7637077946
+2025-07-13 20:45:01,549 - aiogram.event - INFO - Update id=654608083 is handled. Duration 1585 ms by bot id=7637077946
+2025-07-13 20:45:06,186 - root - INFO - Sales report for user 7000454062 added to database.
+2025-07-13 20:45:06,338 - aiogram.event - INFO - Update id=654608084 is handled. Duration 840 ms by bot id=7637077946
+2025-07-13 20:45:11,243 - root - INFO - Report status updated to 'confirmed' for group_message_id 33.
+2025-07-13 20:45:11,421 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 20:45:19,055 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 20:45:19,418 - root - INFO - ➕ Yangi worksheet yaratilmoqda: 'malumot'
+2025-07-13 20:45:23,782 - root - INFO - ✅ Sarlavhalar muvaffaqiyatli formatlandi
+2025-07-13 20:45:23,783 - root - INFO - ✅ Yangi worksheet yaratildi va formatlandi: 'malumot'
+2025-07-13 20:45:28,239 - root - INFO - ✅ Hisobot #1 muvaffaqiyatli saqlandi: /admin - sadhjgsdf
+2025-07-13 20:45:28,240 - root - INFO - Report successfully saved to Google Sheets: 1jUq-5PkBErhTEV4kBdy1TtpZ0-JDcEUj6AApTkObTN8/malumot
+2025-07-13 20:45:28,240 - aiogram.event - INFO - Update id=654608085 is handled. Duration 17177 ms by bot id=7637077946
+2025-07-13 20:53:05,215 - aiogram.event - INFO - Update id=654608086 is not handled. Duration 4 ms by bot id=7637077946
+2025-07-13 20:55:53,652 - aiogram.event - INFO - Update id=654608087 is handled. Duration 525 ms by bot id=7637077946
+2025-07-13 20:56:04,358 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 20:56:04,358 - aiogram.event - INFO - Update id=654608088 is handled. Duration 1170 ms by bot id=7637077946
+2025-07-13 20:56:07,321 - aiogram.event - INFO - Update id=654608089 is handled. Duration 333 ms by bot id=7637077946
+2025-07-13 20:56:08,969 - aiogram.event - INFO - Update id=654608090 is handled. Duration 296 ms by bot id=7637077946
+2025-07-13 20:56:16,174 - aiogram.event - INFO - Update id=654608091 is handled. Duration 509 ms by bot id=7637077946
+2025-07-13 20:56:17,642 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 20:56:17,642 - aiogram.event - INFO - Update id=654608092 is handled. Duration 201 ms by bot id=7637077946
+2025-07-13 20:56:20,494 - aiogram.event - INFO - Update id=654608093 is handled. Duration 350 ms by bot id=7637077946
+2025-07-13 20:56:55,747 - aiogram.event - INFO - Update id=654608094 is handled. Duration 342 ms by bot id=7637077946
+2025-07-13 20:56:56,814 - aiogram.event - INFO - Update id=654608095 is handled. Duration 334 ms by bot id=7637077946
+2025-07-13 20:57:03,472 - aiogram.event - INFO - Update id=654608096 is handled. Duration 327 ms by bot id=7637077946
+2025-07-13 20:57:19,884 - root - INFO - User 7000454062 blocked successfully.
+2025-07-13 20:57:33,855 - aiogram.event - INFO - Update id=654608098 is handled. Duration 4619 ms by bot id=7637077946
+2025-07-13 20:57:34,872 - aiogram.event - INFO - Update id=654608097 is handled. Duration 14994 ms by bot id=7637077946
+2025-07-13 20:59:15,020 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-13 20:59:15,020 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7637077946)
+2025-07-13 20:59:16,443 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7637077946)
+2025-07-13 20:59:17,087 - aiogram.event - INFO - Update id=654608099 is not handled. Duration 643 ms by bot id=7637077946
+2025-07-13 20:59:17,087 - aiogram.event - ERROR - Cause exception while process update id=654608099 by bot id=7637077946
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 146, in show_workers
+    await callback_query.answer()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\bot.py", line 453, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+2025-07-13 21:03:49,609 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:03:49,865 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:03:49,865 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:03:49,866 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:03:58,038 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:03:58,039 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:03:58,039 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:03:58,048 - root - INFO - Admin router initialized successfully
+2025-07-13 21:03:58,062 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:03:58,220 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:03:58,220 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:03:58,725 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:04:01,782 - root - INFO - Yangi foydalanuvchi 8039363087 (Hayotbek Ismoilov) ro'yxatdan o'tish jarayonini boshladi.
+2025-07-13 21:04:01,782 - aiogram.event - INFO - Update id=654608100 is handled. Duration 426 ms by bot id=7637077946
+2025-07-13 21:04:05,181 - root - WARNING - Foydalanuvchi 8039363087 noto'g'ri parol kiritdi.
+2025-07-13 21:04:05,181 - aiogram.event - INFO - Update id=654608101 is handled. Duration 182 ms by bot id=7637077946
+2025-07-13 21:04:12,193 - root - WARNING - Foydalanuvchi 8039363087 noto'g'ri parol kiritdi.
+2025-07-13 21:04:12,193 - aiogram.event - INFO - Update id=654608102 is handled. Duration 178 ms by bot id=7637077946
+2025-07-13 21:04:15,093 - root - WARNING - Foydalanuvchi 8039363087 noto'g'ri parol kiritdi.
+2025-07-13 21:04:15,093 - aiogram.event - INFO - Update id=654608103 is handled. Duration 191 ms by bot id=7637077946
+2025-07-13 21:04:24,157 - root - WARNING - Foydalanuvchi 8039363087 noto'g'ri parol kiritdi.
+2025-07-13 21:04:24,157 - aiogram.event - INFO - Update id=654608104 is handled. Duration 234 ms by bot id=7637077946
+2025-07-13 21:04:30,445 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:04:30,705 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:04:30,706 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:04:30,707 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:04:33,054 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:04:33,054 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:04:33,055 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:04:33,057 - root - INFO - Admin router initialized successfully
+2025-07-13 21:04:33,061 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:04:33,223 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:04:33,223 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:04:33,659 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:04:34,629 - root - INFO - Yangi foydalanuvchi 8039363087 (Hayotbek Ismoilov) ro'yxatdan o'tish jarayonini boshladi.
+2025-07-13 21:04:34,629 - aiogram.event - INFO - Update id=654608105 is handled. Duration 416 ms by bot id=7637077946
+2025-07-13 21:04:38,205 - root - WARNING - Foydalanuvchi 8039363087 noto'g'ri parol kiritdi.
+2025-07-13 21:04:38,205 - aiogram.event - INFO - Update id=654608106 is handled. Duration 160 ms by bot id=7637077946
+2025-07-13 21:05:00,729 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:05:00,993 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:05:00,994 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:05:00,995 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:05:03,487 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:05:03,487 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:05:03,487 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:05:03,490 - root - INFO - Admin router initialized successfully
+2025-07-13 21:05:03,495 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:05:03,658 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:05:03,658 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:05:05,561 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:05:05,952 - aiogram.event - INFO - Update id=654608107 is not handled. Duration 2 ms by bot id=7637077946
+2025-07-13 21:05:14,980 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:05:15,236 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:05:15,237 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:05:15,238 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:05:17,637 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:05:17,637 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:05:17,637 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:05:17,640 - root - INFO - Admin router initialized successfully
+2025-07-13 21:05:17,644 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:05:17,805 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:05:17,805 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:05:18,657 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:05:19,245 - root - INFO - Yangi foydalanuvchi 8039363087 (Hayotbek Ismoilov) ro'yxatdan o'tish jarayonini boshladi.
+2025-07-13 21:05:19,245 - aiogram.event - INFO - Update id=654608108 is handled. Duration 439 ms by bot id=7637077946
+2025-07-13 21:05:23,117 - root - INFO - Foydalanuvchi 8039363087 to'g'ri parol kiritdi, ism so'ralmoqda.
+2025-07-13 21:05:23,118 - aiogram.event - INFO - Update id=654608109 is handled. Duration 189 ms by bot id=7637077946
+2025-07-13 21:05:33,067 - aiogram.event - INFO - Update id=654608110 is handled. Duration 148 ms by bot id=7637077946
+2025-07-13 21:05:39,311 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:05:39,312 - aiogram.event - INFO - Update id=654608111 is handled. Duration 172 ms by bot id=7637077946
+2025-07-13 21:05:43,776 - aiogram.event - INFO - Update id=654608112 is handled. Duration 375 ms by bot id=7637077946
+2025-07-13 21:05:45,411 - aiogram.event - INFO - Update id=654608113 is handled. Duration 586 ms by bot id=7637077946
+2025-07-13 21:05:46,520 - aiogram.event - INFO - Update id=654608114 is handled. Duration 428 ms by bot id=7637077946
+2025-07-13 21:05:49,709 - aiogram.event - INFO - Update id=654608115 is handled. Duration 311 ms by bot id=7637077946
+2025-07-13 21:05:51,024 - aiogram.event - INFO - Update id=654608116 is handled. Duration 278 ms by bot id=7637077946
+2025-07-13 21:05:52,730 - aiogram.event - INFO - Update id=654608117 is handled. Duration 495 ms by bot id=7637077946
+2025-07-13 21:06:26,886 - aiogram.event - INFO - Update id=654608118 is handled. Duration 213 ms by bot id=7637077946
+2025-07-13 21:06:28,402 - aiogram.event - INFO - Update id=654608119 is handled. Duration 204 ms by bot id=7637077946
+2025-07-13 21:06:48,893 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 21:06:51,119 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 21:06:52,032 - root - INFO - ➕ Yangi worksheet yaratilmoqda: 'Malumotlar'
+2025-07-13 21:06:56,939 - root - INFO - ✅ Sarlavhalar muvaffaqiyatli formatlandi
+2025-07-13 21:06:56,940 - root - INFO - ✅ Yangi worksheet yaratildi va formatlandi: 'Malumotlar'
+2025-07-13 21:06:56,942 - root - INFO - Google Sheet added: Muddatli uchun - ID=1jUq-5PkBErhTEV4kBdy1TtpZ0-JDcEUj6AApTkObTN8, Worksheet=Malumotlar
+2025-07-13 21:06:56,942 - root - INFO - Google Sheet added: Muddatli uchun (1jUq-5PkBErhTEV4kBdy1TtpZ0-JDcEUj6AApTkObTN8/Malumotlar)
+2025-07-13 21:06:57,116 - aiogram.event - INFO - Update id=654608120 is not handled. Duration 8251 ms by bot id=7637077946
+2025-07-13 21:06:57,116 - aiogram.event - ERROR - Cause exception while process update id=654608120 by bot id=7637077946
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 723, in process_google_sheet_worksheet_name
+    await show_sheets_list(message, state)
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 581, in show_sheets_list
+    await callback_query.message.edit_text(text, reply_markup=get_sheets_list_keyboard(sheets))
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'. Did you mean: 'message_id'?
+2025-07-13 21:07:40,203 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:07:40,203 - aiogram.event - INFO - Update id=654608121 is handled. Duration 240 ms by bot id=7637077946
+2025-07-13 21:07:43,243 - aiogram.event - INFO - Update id=654608122 is handled. Duration 435 ms by bot id=7637077946
+2025-07-13 21:07:44,795 - aiogram.event - INFO - Update id=654608123 is handled. Duration 407 ms by bot id=7637077946
+2025-07-13 21:07:59,066 - aiogram.event - INFO - Update id=654608124 is handled. Duration 592 ms by bot id=7637077946
+2025-07-13 21:08:05,536 - aiogram.event - INFO - Update id=654608125 is handled. Duration 259 ms by bot id=7637077946
+2025-07-13 21:08:10,799 - root - INFO - Group Sinov Gurux (-1002848261924) with topic 2 and sheet 1 added to database.
+2025-07-13 21:08:10,799 - root - INFO - Group Sinov Gurux (-1002848261924) added with Google Sheet Muddatli uchun by admin
+2025-07-13 21:08:11,705 - aiogram.event - INFO - Update id=654608126 is handled. Duration 912 ms by bot id=7637077946
+2025-07-13 21:08:14,252 - aiogram.event - INFO - Update id=654608127 is handled. Duration 303 ms by bot id=7637077946
+2025-07-13 21:08:52,595 - aiogram.event - INFO - Update id=654608128 is handled. Duration 242 ms by bot id=7637077946
+2025-07-13 21:10:44,922 - aiogram.event - INFO - Update id=654608129 is handled. Duration 632 ms by bot id=7637077946
+2025-07-13 21:10:47,435 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:10:47,435 - aiogram.event - INFO - Update id=654608130 is handled. Duration 185 ms by bot id=7637077946
+2025-07-13 21:10:49,831 - aiogram.event - INFO - Update id=654608131 is handled. Duration 321 ms by bot id=7637077946
+2025-07-13 21:10:51,334 - aiogram.event - INFO - Update id=654608132 is not handled. Duration 8 ms by bot id=7637077946
+2025-07-13 21:11:01,293 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:11:01,293 - aiogram.event - INFO - Update id=654608133 is handled. Duration 162 ms by bot id=7637077946
+2025-07-13 21:11:05,444 - aiogram.event - INFO - Update id=654608134 is handled. Duration 332 ms by bot id=7637077946
+2025-07-13 21:11:10,251 - aiogram.event - INFO - Update id=654608135 is handled. Duration 303 ms by bot id=7637077946
+2025-07-13 21:11:12,031 - aiogram.event - INFO - Update id=654608136 is handled. Duration 292 ms by bot id=7637077946
+2025-07-13 21:11:12,702 - aiogram.event - INFO - Update id=654608137 is handled. Duration 266 ms by bot id=7637077946
+2025-07-13 21:11:18,075 - aiogram.event - INFO - Update id=654608138 is handled. Duration 173 ms by bot id=7637077946
+2025-07-13 21:11:26,634 - aiogram.event - INFO - Update id=654608139 is handled. Duration 180 ms by bot id=7637077946
+2025-07-13 21:11:36,869 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 21:11:38,747 - root - INFO - 📄 Spreadsheet ochildi: Auto Shop
+2025-07-13 21:11:39,733 - root - INFO - ➕ Yangi worksheet yaratilmoqda: 'AutoShop'
+2025-07-13 21:11:44,834 - root - INFO - ✅ Sarlavhalar muvaffaqiyatli formatlandi
+2025-07-13 21:11:44,834 - root - INFO - ✅ Yangi worksheet yaratildi va formatlandi: 'AutoShop'
+2025-07-13 21:11:44,837 - root - INFO - Google Sheet added: Auto Shop uchun - ID=1RZnTT2l9HdS0aCBr6We7mI0UAUqrFkqK-0ZDT7S6XYc, Worksheet=AutoShop
+2025-07-13 21:11:44,837 - root - INFO - Google Sheet added: Auto Shop uchun (1RZnTT2l9HdS0aCBr6We7mI0UAUqrFkqK-0ZDT7S6XYc/AutoShop)
+2025-07-13 21:11:45,014 - aiogram.event - INFO - Update id=654608140 is not handled. Duration 8184 ms by bot id=7637077946
+2025-07-13 21:11:45,014 - aiogram.event - ERROR - Cause exception while process update id=654608140 by bot id=7637077946
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 723, in process_google_sheet_worksheet_name
+    await show_sheets_list(message, state)
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 581, in show_sheets_list
+    await callback_query.message.edit_text(text, reply_markup=get_sheets_list_keyboard(sheets))
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'. Did you mean: 'message_id'?
+2025-07-13 21:11:51,670 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:11:51,670 - aiogram.event - INFO - Update id=654608141 is handled. Duration 183 ms by bot id=7637077946
+2025-07-13 21:11:53,574 - aiogram.event - INFO - Update id=654608142 is handled. Duration 292 ms by bot id=7637077946
+2025-07-13 21:11:55,206 - aiogram.event - INFO - Update id=654608143 is handled. Duration 310 ms by bot id=7637077946
+2025-07-13 21:12:33,003 - aiogram.event - INFO - Update id=654608144 is handled. Duration 184 ms by bot id=7637077946
+2025-07-13 21:12:40,552 - aiogram.event - INFO - Update id=654608145 is handled. Duration 226 ms by bot id=7637077946
+2025-07-13 21:12:42,374 - root - INFO - Group Auto Shop (-1002277184269) with topic 4 and sheet 2 added to database.
+2025-07-13 21:12:42,375 - root - INFO - Group Auto Shop (-1002277184269) added with Google Sheet Auto Shop uchun by admin
+2025-07-13 21:12:42,937 - aiogram.event - INFO - Update id=654608146 is handled. Duration 573 ms by bot id=7637077946
+2025-07-13 21:12:50,424 - root - INFO - Yangi foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) ro'yxatdan o'tish jarayonini boshladi.
+2025-07-13 21:12:50,424 - aiogram.event - INFO - Update id=654608147 is handled. Duration 285 ms by bot id=7637077946
+2025-07-13 21:12:53,218 - root - INFO - Foydalanuvchi 7885326735 to'g'ri parol kiritdi, ism so'ralmoqda.
+2025-07-13 21:12:53,218 - aiogram.event - INFO - Update id=654608148 is handled. Duration 189 ms by bot id=7637077946
+2025-07-13 21:12:57,418 - aiogram.event - INFO - Update id=654608149 is handled. Duration 698 ms by bot id=7637077946
+2025-07-13 21:13:10,843 - root - INFO - User 7885326735 added to database with group -1002277184269.
+2025-07-13 21:13:11,386 - root - INFO - Yangi foydalanuvchi 7885326735 (Hayotbek) muvaffaqiyatli ro'yxatdan o'tdi va -1002277184269 guruhiga tayinlandi.
+2025-07-13 21:13:11,628 - aiogram.event - INFO - Update id=654608150 is handled. Duration 787 ms by bot id=7637077946
+2025-07-13 21:13:19,929 - root - INFO - Yangi foydalanuvchi 7000454062 (𝐄𝐭𝐡𝐢𝐜𝐚𝐥 𝐑𝐨𝐨𝐁𝐨𝐭 |) ro'yxatdan o'tish jarayonini boshladi.
+2025-07-13 21:13:19,929 - aiogram.event - INFO - Update id=654608151 is handled. Duration 190 ms by bot id=7637077946
+2025-07-13 21:13:23,006 - root - INFO - Foydalanuvchi 7000454062 to'g'ri parol kiritdi, ism so'ralmoqda.
+2025-07-13 21:13:23,006 - aiogram.event - INFO - Update id=654608152 is handled. Duration 188 ms by bot id=7637077946
+2025-07-13 21:13:27,273 - aiogram.event - INFO - Update id=654608153 is handled. Duration 330 ms by bot id=7637077946
+2025-07-13 21:13:32,101 - aiogram.event - INFO - Update id=654608154 is handled. Duration 161 ms by bot id=7637077946
+2025-07-13 21:13:37,500 - root - INFO - User 7000454062 added to database with group -1002848261924.
+2025-07-13 21:13:37,888 - root - INFO - Yangi foydalanuvchi 7000454062 (RooBotMee) muvaffaqiyatli ro'yxatdan o'tdi va -1002848261924 guruhiga tayinlandi.
+2025-07-13 21:13:38,412 - aiogram.event - INFO - Update id=654608155 is handled. Duration 917 ms by bot id=7637077946
+2025-07-13 21:13:43,406 - aiogram.event - INFO - Update id=654608156 is handled. Duration 673 ms by bot id=7637077946
+2025-07-13 21:13:53,145 - aiogram.event - INFO - Update id=654608157 is handled. Duration 1255 ms by bot id=7637077946
+2025-07-13 21:14:00,006 - aiogram.event - INFO - Update id=654608158 is handled. Duration 604 ms by bot id=7637077946
+2025-07-13 21:14:04,456 - aiogram.event - INFO - Update id=654608159 is handled. Duration 719 ms by bot id=7637077946
+2025-07-13 21:14:09,287 - aiogram.event - INFO - Update id=654608160 is handled. Duration 491 ms by bot id=7637077946
+2025-07-13 21:14:15,277 - aiogram.event - INFO - Update id=654608161 is handled. Duration 788 ms by bot id=7637077946
+2025-07-13 21:14:22,515 - aiogram.event - INFO - Update id=654608162 is handled. Duration 548 ms by bot id=7637077946
+2025-07-13 21:14:45,579 - root - INFO - Sales report for user 7000454062 added to database.
+2025-07-13 21:14:46,135 - aiogram.event - INFO - Update id=654608163 is handled. Duration 1157 ms by bot id=7637077946
+2025-07-13 21:14:53,476 - aiogram.event - INFO - Update id=654608164 is handled. Duration 142 ms by bot id=7637077946
+2025-07-13 21:15:01,054 - aiogram.event - INFO - Update id=654608165 is handled. Duration 159 ms by bot id=7637077946
+2025-07-13 21:15:17,435 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:15:17,698 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:15:17,698 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:15:17,699 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:15:20,141 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:15:20,142 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:15:20,142 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:15:20,144 - root - INFO - Admin router initialized successfully
+2025-07-13 21:15:20,149 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:15:20,312 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:15:20,312 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:15:20,766 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:15:25,492 - root - INFO - Report status updated to 'confirmed' for group_message_id 34.
+2025-07-13 21:15:25,675 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 21:15:28,718 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 21:15:29,076 - root - INFO - 📋 Worksheet topildi: 'Malumotlar'
+2025-07-13 21:15:37,888 - root - INFO - ✅ Hisobot #1 muvaffaqiyatli saqlandi: RooBotMee - GameBox
+2025-07-13 21:15:37,889 - root - INFO - Report successfully saved to Google Sheets: Muddatli uchun (1jUq-5PkBErhTEV4kBdy1TtpZ0-JDcEUj6AApTkObTN8/Malumotlar)
+2025-07-13 21:15:37,889 - aiogram.event - INFO - Update id=654608166 is handled. Duration 12840 ms by bot id=7637077946
+2025-07-13 21:19:09,675 - aiogram.event - INFO - Update id=654608167 is not handled. Duration 6 ms by bot id=7637077946
+2025-07-13 21:22:53,054 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:22:53,054 - aiogram.event - INFO - Update id=654608168 is handled. Duration 257 ms by bot id=7637077946
+2025-07-13 21:22:54,711 - aiogram.event - INFO - Update id=654608169 is handled. Duration 420 ms by bot id=7637077946
+2025-07-13 21:23:23,137 - root - INFO - Mavjud foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) botga kirdi.
+2025-07-13 21:23:23,137 - aiogram.event - INFO - Update id=654608170 is handled. Duration 183 ms by bot id=7637077946
+2025-07-13 21:23:27,044 - aiogram.event - INFO - Update id=654608171 is handled. Duration 285 ms by bot id=7637077946
+2025-07-13 21:24:13,430 - aiogram.event - INFO - Update id=654608172 is handled. Duration 855 ms by bot id=7637077946
+2025-07-13 21:24:14,236 - aiogram.event - INFO - Update id=654608173 is handled. Duration 334 ms by bot id=7637077946
+2025-07-13 21:24:20,956 - aiogram.event - INFO - Update id=654608174 is not handled. Duration 5 ms by bot id=7637077946
+2025-07-13 21:24:23,316 - aiogram.event - INFO - Update id=654608175 is handled. Duration 451 ms by bot id=7637077946
+2025-07-13 21:24:32,173 - root - INFO - Group -1002277184269 deleted from database.
+2025-07-13 21:24:32,173 - root - INFO - Group Auto Shop (-1002277184269) deleted by admin
+2025-07-13 21:24:32,539 - aiogram.event - INFO - Update id=654608176 is handled. Duration 377 ms by bot id=7637077946
+2025-07-13 21:24:35,453 - aiogram.event - INFO - Update id=654608177 is handled. Duration 762 ms by bot id=7637077946
+2025-07-13 21:24:38,061 - aiogram.event - INFO - Update id=654608178 is handled. Duration 210 ms by bot id=7637077946
+2025-07-13 21:24:48,079 - aiogram.event - INFO - Update id=654608179 is handled. Duration 170 ms by bot id=7637077946
+2025-07-13 21:24:50,129 - root - INFO - Group AutoShop (-1002277184269) with topic 2 and sheet 2 added to database.
+2025-07-13 21:24:50,129 - root - INFO - Group AutoShop (-1002277184269) added with Google Sheet Auto Shop uchun by admin
+2025-07-13 21:24:51,337 - aiogram.event - INFO - Update id=654608180 is handled. Duration 1215 ms by bot id=7637077946
+2025-07-13 21:24:57,729 - aiogram.event - INFO - Update id=654608181 is handled. Duration 288 ms by bot id=7637077946
+2025-07-13 21:24:58,679 - aiogram.event - INFO - Update id=654608182 is handled. Duration 370 ms by bot id=7637077946
+2025-07-13 21:25:10,392 - aiogram.event - INFO - Update id=654608183 is handled. Duration 356 ms by bot id=7637077946
+2025-07-13 21:25:12,635 - aiogram.event - INFO - Update id=654608184 is handled. Duration 408 ms by bot id=7637077946
+2025-07-13 21:25:13,867 - root - INFO - User 7885326735 group updated to -1002277184269.
+2025-07-13 21:25:14,040 - root - INFO - Worker 7885326735 assigned to group -1002277184269 by admin
+2025-07-13 21:25:14,193 - aiogram.event - INFO - Update id=654608185 is handled. Duration 334 ms by bot id=7637077946
+2025-07-13 21:25:49,814 - root - INFO - Mavjud foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) botga kirdi.
+2025-07-13 21:25:49,814 - aiogram.event - INFO - Update id=654608186 is handled. Duration 152 ms by bot id=7637077946
+2025-07-13 21:25:51,400 - aiogram.event - INFO - Update id=654608187 is handled. Duration 163 ms by bot id=7637077946
+2025-07-13 21:25:56,003 - aiogram.event - INFO - Update id=654608188 is handled. Duration 456 ms by bot id=7637077946
+2025-07-13 21:26:01,422 - aiogram.event - INFO - Update id=654608189 is handled. Duration 823 ms by bot id=7637077946
+2025-07-13 21:26:17,685 - aiogram.event - INFO - Update id=654608190 is handled. Duration 8010 ms by bot id=7637077946
+2025-07-13 21:26:20,672 - aiogram.event - INFO - Update id=654608191 is handled. Duration 505 ms by bot id=7637077946
+2025-07-13 21:26:34,042 - aiogram.event - INFO - Update id=654608192 is handled. Duration 896 ms by bot id=7637077946
+2025-07-13 21:26:37,090 - aiogram.event - INFO - Update id=654608193 is handled. Duration 1106 ms by bot id=7637077946
+2025-07-13 21:26:44,076 - root - INFO - Sales report for user 7885326735 added to database.
+2025-07-13 21:26:44,932 - aiogram.event - INFO - Update id=654608194 is handled. Duration 2245 ms by bot id=7637077946
+2025-07-13 21:27:29,693 - root - INFO - Report status updated to 'confirmed' for group_message_id 2125.
+2025-07-13 21:27:29,919 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 21:27:31,827 - root - INFO - 📄 Spreadsheet ochildi: Auto Shop
+2025-07-13 21:27:32,756 - root - INFO - 📋 Worksheet topildi: 'AutoShop'
+2025-07-13 21:27:37,750 - root - INFO - ✅ Hisobot #1 muvaffaqiyatli saqlandi: Hayotbek - Bu xech qanday sotuv emas bu test
+2025-07-13 21:27:37,751 - root - INFO - Report successfully saved to Google Sheets: Auto Shop uchun (1RZnTT2l9HdS0aCBr6We7mI0UAUqrFkqK-0ZDT7S6XYc/AutoShop)
+2025-07-13 21:27:37,751 - aiogram.event - INFO - Update id=654608195 is handled. Duration 8249 ms by bot id=7637077946
+2025-07-13 21:27:44,853 - aiogram.event - INFO - Update id=654608196 is handled. Duration 155 ms by bot id=7637077946
+2025-07-13 21:27:45,266 - aiogram.event - INFO - Update id=654608197 is handled. Duration 419 ms by bot id=7637077946
+2025-07-13 21:27:46,731 - aiogram.event - INFO - Update id=654608198 is handled. Duration 184 ms by bot id=7637077946
+2025-07-13 21:27:47,575 - aiogram.event - INFO - Update id=654608199 is handled. Duration 174 ms by bot id=7637077946
+2025-07-13 21:27:49,098 - aiogram.event - INFO - Update id=654608200 is handled. Duration 153 ms by bot id=7637077946
+2025-07-13 21:27:50,559 - aiogram.event - INFO - Update id=654608201 is handled. Duration 156 ms by bot id=7637077946
+2025-07-13 21:27:52,212 - aiogram.event - INFO - Update id=654608202 is handled. Duration 271 ms by bot id=7637077946
+2025-07-13 21:27:53,116 - aiogram.event - INFO - Update id=654608203 is handled. Duration 172 ms by bot id=7637077946
+2025-07-13 21:29:05,774 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:29:06,036 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:29:06,036 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:29:06,037 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:29:08,548 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:29:08,548 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:29:08,548 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:29:08,551 - root - INFO - Admin router initialized successfully
+2025-07-13 21:29:08,554 - root - INFO - Added contract_amount column to sales_reports table
+2025-07-13 21:29:08,556 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:29:08,717 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:29:08,718 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:29:09,207 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:29:09,892 - aiogram.event - INFO - Update id=654608204 is handled. Duration 494 ms by bot id=7637077946
+2025-07-13 21:29:15,628 - root - INFO - Yangi foydalanuvchi 8039363087 (Hayotbek Ismoilov) ro'yxatdan o'tish jarayonini boshladi.
+2025-07-13 21:29:15,628 - aiogram.event - INFO - Update id=654608205 is handled. Duration 151 ms by bot id=7637077946
+2025-07-13 21:29:16,411 - root - WARNING - Foydalanuvchi 8039363087 noto'g'ri parol kiritdi.
+2025-07-13 21:29:16,411 - aiogram.event - INFO - Update id=654608206 is handled. Duration 183 ms by bot id=7637077946
+2025-07-13 21:29:22,593 - root - INFO - Foydalanuvchi 8039363087 to'g'ri parol kiritdi, ism so'ralmoqda.
+2025-07-13 21:29:22,593 - aiogram.event - INFO - Update id=654608207 is handled. Duration 148 ms by bot id=7637077946
+2025-07-13 21:29:26,438 - aiogram.event - INFO - Update id=654608208 is handled. Duration 149 ms by bot id=7637077946
+2025-07-13 21:29:27,948 - root - INFO - User 8039363087 added to database with group -1002848261924.
+2025-07-13 21:29:28,275 - root - INFO - Yangi foydalanuvchi 8039363087 (Toshmat) muvaffaqiyatli ro'yxatdan o'tdi va -1002848261924 guruhiga tayinlandi.
+2025-07-13 21:29:28,430 - aiogram.event - INFO - Update id=654608209 is handled. Duration 486 ms by bot id=7637077946
+2025-07-13 21:29:29,914 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:29:29,914 - aiogram.event - INFO - Update id=654608210 is handled. Duration 164 ms by bot id=7637077946
+2025-07-13 21:29:32,674 - aiogram.event - INFO - Update id=654608211 is handled. Duration 337 ms by bot id=7637077946
+2025-07-13 21:29:36,181 - aiogram.event - INFO - Update id=654608212 is not handled. Duration 5 ms by bot id=7637077946
+2025-07-13 21:30:12,541 - root - INFO - Mavjud foydalanuvchi 8039363087 (Hayotbek Ismoilov) botga kirdi.
+2025-07-13 21:30:12,541 - aiogram.event - INFO - Update id=654608213 is handled. Duration 194 ms by bot id=7637077946
+2025-07-13 21:30:13,583 - aiogram.event - INFO - Update id=654608214 is handled. Duration 178 ms by bot id=7637077946
+2025-07-13 21:30:16,357 - aiogram.event - INFO - Update id=654608215 is handled. Duration 497 ms by bot id=7637077946
+2025-07-13 21:30:19,208 - aiogram.event - INFO - Update id=654608216 is handled. Duration 555 ms by bot id=7637077946
+2025-07-13 21:30:21,687 - aiogram.event - INFO - Update id=654608217 is handled. Duration 657 ms by bot id=7637077946
+2025-07-13 21:30:24,244 - aiogram.event - INFO - Update id=654608218 is handled. Duration 422 ms by bot id=7637077946
+2025-07-13 21:30:27,235 - aiogram.event - INFO - Update id=654608219 is handled. Duration 852 ms by bot id=7637077946
+2025-07-13 21:30:29,849 - aiogram.event - INFO - Update id=654608220 is handled. Duration 480 ms by bot id=7637077946
+2025-07-13 21:30:32,552 - aiogram.event - INFO - Update id=654608221 is handled. Duration 715 ms by bot id=7637077946
+2025-07-13 21:30:41,832 - root - INFO - Sales report for user 8039363087 added to database.
+2025-07-13 21:30:42,083 - aiogram.event - INFO - Update id=654608222 is handled. Duration 876 ms by bot id=7637077946
+2025-07-13 21:31:45,957 - aiogram.event - INFO - Update id=654608223 is not handled. Duration 2 ms by bot id=7637077946
+2025-07-13 21:32:46,725 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:32:46,725 - aiogram.event - INFO - Update id=654608224 is handled. Duration 239 ms by bot id=7637077946
+2025-07-13 21:33:09,295 - aiogram.event - INFO - Update id=654608225 is handled. Duration 318 ms by bot id=7637077946
+2025-07-13 21:33:12,057 - aiogram.event - INFO - Update id=654608226 is handled. Duration 159 ms by bot id=7637077946
+2025-07-13 21:33:14,919 - aiogram.event - INFO - Update id=654608227 is handled. Duration 415 ms by bot id=7637077946
+2025-07-13 21:33:21,313 - aiogram.event - INFO - Update id=654608228 is handled. Duration 770 ms by bot id=7637077946
+2025-07-13 21:33:22,345 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 21:33:22,345 - aiogram.event - INFO - Update id=654608229 is handled. Duration 171 ms by bot id=7637077946
+2025-07-13 21:33:27,380 - aiogram.event - INFO - Update id=654608230 is handled. Duration 453 ms by bot id=7637077946
+2025-07-13 21:33:28,405 - aiogram.event - INFO - Update id=654608231 is handled. Duration 334 ms by bot id=7637077946
+2025-07-13 21:33:30,789 - aiogram.event - INFO - Update id=654608232 is handled. Duration 166 ms by bot id=7637077946
+2025-07-13 21:33:37,250 - root - INFO - Admin password updated successfully.
+2025-07-13 21:33:37,250 - root - INFO - Admin password changed to: 22222
+2025-07-13 21:33:37,413 - aiogram.event - INFO - Update id=654608233 is not handled. Duration 167 ms by bot id=7637077946
+2025-07-13 21:33:37,413 - aiogram.event - ERROR - Cause exception while process update id=654608233 by bot id=7637077946
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 965, in process_password_confirmation
+    await show_password_menu(message, state)
+  File "C:\Users\user\Desktop\Telegram Bot\Otchot Bot\admin.py", line 861, in show_password_menu
+    await callback_query.message.edit_text(text, reply_markup=get_password_change_keyboard())
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'. Did you mean: 'message_id'?
+2025-07-13 21:33:52,440 - root - INFO - Mavjud foydalanuvchi 7000454062 (𝐄𝐭𝐡𝐢𝐜𝐚𝐥 𝐑𝐨𝐨𝐁𝐨𝐭 |) botga kirdi.
+2025-07-13 21:33:52,440 - aiogram.event - INFO - Update id=654608234 is handled. Duration 201 ms by bot id=7637077946
+2025-07-13 21:33:55,260 - aiogram.event - INFO - Update id=654608235 is handled. Duration 230 ms by bot id=7637077946
+2025-07-13 21:33:57,508 - aiogram.event - INFO - Update id=654608236 is handled. Duration 940 ms by bot id=7637077946
+2025-07-13 21:35:17,416 - aiogram.event - INFO - Update id=654608237 is handled. Duration 182 ms by bot id=7637077946
+2025-07-13 21:36:54,749 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:36:55,014 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:36:55,014 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:36:55,015 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:36:57,664 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:36:57,664 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:36:57,664 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:36:57,666 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 21:36:57,666 - root - INFO - 🔄 Hisobot jarayoni: Mijoz ismi → Telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash → Guruhga yuborish
+2025-07-13 21:36:57,667 - root - INFO - Admin router initialized successfully
+2025-07-13 21:36:57,671 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:36:57,828 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:36:57,828 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:36:58,251 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:37:20,551 - root - INFO - Mavjud foydalanuvchi 7000454062 (𝐄𝐭𝐡𝐢𝐜𝐚𝐥 𝐑𝐨𝐨𝐁𝐨𝐭 |) botga kirdi.
+2025-07-13 21:37:20,551 - aiogram.event - INFO - Update id=654608238 is handled. Duration 473 ms by bot id=7637077946
+2025-07-13 21:37:21,317 - root - INFO - User 7000454062 started report submission process
+2025-07-13 21:37:21,318 - aiogram.event - INFO - Update id=654608239 is handled. Duration 223 ms by bot id=7637077946
+2025-07-13 21:37:26,737 - root - INFO - Client name processed: Hayotbek Ismoilov
+2025-07-13 21:37:26,737 - aiogram.event - INFO - Update id=654608240 is handled. Duration 669 ms by bot id=7637077946
+2025-07-13 21:37:34,936 - aiogram.event - INFO - Update id=654608241 is handled. Duration 531 ms by bot id=7637077946
+2025-07-13 21:37:38,144 - root - INFO - Phone number processed: +998901234567
+2025-07-13 21:37:38,144 - aiogram.event - INFO - Update id=654608242 is handled. Duration 489 ms by bot id=7637077946
+2025-07-13 21:37:43,823 - root - INFO - Product type processed: Tovar
+2025-07-13 21:37:43,824 - aiogram.event - INFO - Update id=654608243 is handled. Duration 515 ms by bot id=7637077946
+2025-07-13 21:37:52,902 - root - INFO - Client location processed: Toshkent shahar, Chilonzor tumani, Bunyodkor
+2025-07-13 21:37:52,902 - aiogram.event - INFO - Update id=654608244 is handled. Duration 735 ms by bot id=7637077946
+2025-07-13 21:38:08,571 - root - INFO - Contract ID processed: SH-2024-001
+2025-07-13 21:38:08,571 - aiogram.event - INFO - Update id=654608245 is handled. Duration 643 ms by bot id=7637077946
+2025-07-13 21:38:14,133 - root - INFO - Contract amount processed: 5000000
+2025-07-13 21:38:14,133 - aiogram.event - INFO - Update id=654608246 is handled. Duration 673 ms by bot id=7637077946
+2025-07-13 21:38:20,964 - root - INFO - Product image processed for user 7000454062
+2025-07-13 21:38:20,964 - aiogram.event - INFO - Update id=654608247 is handled. Duration 910 ms by bot id=7637077946
+2025-07-13 21:38:24,225 - aiogram.event - INFO - Update id=654608248 is handled. Duration 285 ms by bot id=7637077946
+2025-07-13 21:38:26,836 - aiogram.event - INFO - Update id=654608249 is handled. Duration 312 ms by bot id=7637077946
+2025-07-13 21:38:34,638 - root - INFO - Contract amount processed: 600000
+2025-07-13 21:38:34,638 - aiogram.event - INFO - Update id=654608250 is handled. Duration 413 ms by bot id=7637077946
+2025-07-13 21:38:41,637 - root - INFO - Product image processed for user 7000454062
+2025-07-13 21:38:41,638 - aiogram.event - INFO - Update id=654608251 is handled. Duration 465 ms by bot id=7637077946
+2025-07-13 21:38:46,281 - root - INFO - Sales report for user 7000454062 added to database.
+2025-07-13 21:38:46,727 - root - INFO - Report successfully sent to group Sinov Gurux by user 7000454062
+2025-07-13 21:38:46,948 - aiogram.event - INFO - Update id=654608252 is handled. Duration 880 ms by bot id=7637077946
+2025-07-13 21:38:55,740 - aiogram.event - INFO - Update id=654608253 is handled. Duration 254 ms by bot id=7637077946
+2025-07-13 21:38:58,743 - aiogram.event - INFO - Update id=654608254 is handled. Duration 220 ms by bot id=7637077946
+2025-07-13 21:39:00,889 - root - INFO - Report status updated to 'rejected' for group_message_id 36.
+2025-07-13 21:39:01,396 - root - INFO - Report rejected and deleted by helper 8039363087
+2025-07-13 21:39:01,396 - aiogram.event - INFO - Update id=654608255 is handled. Duration 728 ms by bot id=7637077946
+2025-07-13 21:39:06,885 - aiogram.event - INFO - Update id=654608256 is handled. Duration 371 ms by bot id=7637077946
+2025-07-13 21:39:24,057 - aiogram.event - INFO - Update id=654608257 is not handled. Duration 3 ms by bot id=7637077946
+2025-07-13 21:39:28,132 - aiogram.event - INFO - Update id=654608258 is not handled. Duration 3 ms by bot id=7637077946
+2025-07-13 21:39:29,321 - aiogram.event - INFO - Update id=654608259 is not handled. Duration 6 ms by bot id=7637077946
+2025-07-13 21:39:44,152 - root - INFO - User 7000454062 started report submission process
+2025-07-13 21:39:44,152 - aiogram.event - INFO - Update id=654608260 is handled. Duration 233 ms by bot id=7637077946
+2025-07-13 21:39:47,140 - root - INFO - User 7000454062 cancelled report submission
+2025-07-13 21:39:47,141 - aiogram.event - INFO - Update id=654608261 is handled. Duration 610 ms by bot id=7637077946
+2025-07-13 21:39:49,031 - root - INFO - User 7000454062 started report submission process
+2025-07-13 21:39:49,031 - aiogram.event - INFO - Update id=654608262 is handled. Duration 145 ms by bot id=7637077946
+2025-07-13 21:39:51,385 - root - INFO - Client name processed: fsdfsdfasdf
+2025-07-13 21:39:51,385 - aiogram.event - INFO - Update id=654608263 is handled. Duration 449 ms by bot id=7637077946
+2025-07-13 21:39:55,357 - root - INFO - Phone number processed: +998901234567
+2025-07-13 21:39:55,357 - aiogram.event - INFO - Update id=654608264 is handled. Duration 420 ms by bot id=7637077946
+2025-07-13 21:40:00,431 - root - INFO - Product type processed: Samsung Galaxy A54 128GB yoki iPhone 15 Pro
+2025-07-13 21:40:00,431 - aiogram.event - INFO - Update id=654608265 is handled. Duration 525 ms by bot id=7637077946
+2025-07-13 21:40:04,296 - aiogram.event - INFO - Update id=654608266 is handled. Duration 482 ms by bot id=7637077946
+2025-07-13 21:40:10,565 - aiogram.event - INFO - Update id=654608267 is handled. Duration 780 ms by bot id=7637077946
+2025-07-13 21:40:19,286 - root - INFO - Client location processed: har, Chilonzor tuman
+2025-07-13 21:40:19,286 - aiogram.event - INFO - Update id=654608268 is handled. Duration 588 ms by bot id=7637077946
+2025-07-13 21:40:27,227 - root - INFO - Contract ID processed: SH-2024-001
+2025-07-13 21:40:27,227 - aiogram.event - INFO - Update id=654608269 is handled. Duration 668 ms by bot id=7637077946
+2025-07-13 21:40:39,037 - root - INFO - Contract amount processed: 5000000
+2025-07-13 21:40:39,037 - aiogram.event - INFO - Update id=654608270 is handled. Duration 474 ms by bot id=7637077946
+2025-07-13 21:40:45,361 - root - INFO - Product image processed for user 7000454062
+2025-07-13 21:40:45,362 - aiogram.event - INFO - Update id=654608271 is handled. Duration 1142 ms by bot id=7637077946
+2025-07-13 21:40:51,262 - root - INFO - Sales report for user 7000454062 added to database.
+2025-07-13 21:40:52,491 - root - INFO - Report successfully sent to group Sinov Gurux by user 7000454062
+2025-07-13 21:40:52,703 - aiogram.event - INFO - Update id=654608272 is handled. Duration 1629 ms by bot id=7637077946
+2025-07-13 21:40:56,479 - aiogram.event - INFO - Update id=654608273 is handled. Duration 170 ms by bot id=7637077946
+2025-07-13 21:41:01,871 - root - INFO - Report status updated to 'rejected' for group_message_id 37.
+2025-07-13 21:41:03,697 - root - INFO - Report rejected and deleted by helper 8039363087
+2025-07-13 21:41:03,697 - aiogram.event - INFO - Update id=654608274 is handled. Duration 2010 ms by bot id=7637077946
+2025-07-13 21:41:05,694 - aiogram.event - INFO - Update id=654608275 is handled. Duration 660 ms by bot id=7637077946
+2025-07-13 21:46:14,007 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-13 21:46:14,007 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7637077946)
+2025-07-13 21:46:25,480 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7637077946)
+2025-07-13 21:50:20,017 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-13 21:50:20,018 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7637077946)
+2025-07-13 21:50:32,392 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7637077946)
+2025-07-13 21:52:52,385 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:52:52,648 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:52:52,648 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:52:52,650 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:52:55,277 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:52:55,277 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:52:55,277 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:52:55,278 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 21:52:55,278 - root - INFO - 🔄 Hisobot jarayoni: Mijoz ismi → Telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash → Guruhga yuborish
+2025-07-13 21:52:55,278 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 21:52:55,278 - root - INFO - 👨‍💼 Sotuvchi profili: Telegram ID orqali to'liq ma'lumotlar
+2025-07-13 21:52:55,280 - root - INFO - Admin router initialized successfully
+2025-07-13 21:52:55,284 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:52:55,445 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:52:55,446 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:52:55,981 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:53:06,509 - root - INFO - Mavjud foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) botga kirdi.
+2025-07-13 21:53:06,509 - aiogram.event - INFO - Update id=654608276 is handled. Duration 435 ms by bot id=7637077946
+2025-07-13 21:53:09,089 - root - INFO - User 7885326735 started report submission process
+2025-07-13 21:53:09,089 - aiogram.event - INFO - Update id=654608277 is handled. Duration 219 ms by bot id=7637077946
+2025-07-13 21:53:13,407 - root - INFO - Client name processed: Kakka
+2025-07-13 21:53:13,407 - aiogram.event - INFO - Update id=654608278 is handled. Duration 525 ms by bot id=7637077946
+2025-07-13 21:53:19,227 - root - INFO - Phone number processed: 998901234567
+2025-07-13 21:53:19,227 - aiogram.event - INFO - Update id=654608279 is handled. Duration 689 ms by bot id=7637077946
+2025-07-13 21:53:23,050 - root - INFO - Product type processed: Tols
+2025-07-13 21:53:23,050 - aiogram.event - INFO - Update id=654608280 is handled. Duration 554 ms by bot id=7637077946
+2025-07-13 21:53:29,266 - aiogram.event - INFO - Update id=654608281 is handled. Duration 629 ms by bot id=7637077946
+2025-07-13 21:53:40,341 - root - INFO - Client location processed: Toshkent qoqon
+2025-07-13 21:53:40,341 - aiogram.event - INFO - Update id=654608282 is handled. Duration 610 ms by bot id=7637077946
+2025-07-13 21:53:48,547 - root - INFO - Contract ID processed: Ad827272
+2025-07-13 21:53:48,547 - aiogram.event - INFO - Update id=654608283 is handled. Duration 520 ms by bot id=7637077946
+2025-07-13 21:54:05,284 - root - INFO - Contract amount processed: 5000000 -> 5.000.000
+2025-07-13 21:54:05,284 - aiogram.event - INFO - Update id=654608284 is handled. Duration 1186 ms by bot id=7637077946
+2025-07-13 21:54:15,936 - root - INFO - Product image processed for user 7885326735
+2025-07-13 21:54:15,936 - aiogram.event - INFO - Update id=654608285 is handled. Duration 617 ms by bot id=7637077946
+2025-07-13 21:54:25,155 - aiogram.event - INFO - Update id=654608286 is handled. Duration 548 ms by bot id=7637077946
+2025-07-13 21:54:31,610 - aiogram.event - INFO - Update id=654608287 is handled. Duration 331 ms by bot id=7637077946
+2025-07-13 21:54:37,713 - root - INFO - Client name processed: Hayotbek Ismoilov
+2025-07-13 21:54:37,713 - aiogram.event - INFO - Update id=654608288 is handled. Duration 314 ms by bot id=7637077946
+2025-07-13 21:54:45,305 - root - INFO - Phone number processed: 950051545
+2025-07-13 21:54:45,305 - aiogram.event - INFO - Update id=654608289 is handled. Duration 740 ms by bot id=7637077946
+2025-07-13 21:54:52,003 - root - INFO - Product type processed: Tovar nomi
+2025-07-13 21:54:52,003 - aiogram.event - INFO - Update id=654608290 is handled. Duration 447 ms by bot id=7637077946
+2025-07-13 21:54:57,560 - root - INFO - Client location processed: Toshkent ccc
+2025-07-13 21:54:57,560 - aiogram.event - INFO - Update id=654608291 is handled. Duration 467 ms by bot id=7637077946
+2025-07-13 21:55:04,754 - root - INFO - Contract ID processed: SH-2024
+2025-07-13 21:55:04,755 - aiogram.event - INFO - Update id=654608292 is handled. Duration 501 ms by bot id=7637077946
+2025-07-13 21:55:11,176 - root - INFO - Contract amount processed: 500000382 -> 500.000.382
+2025-07-13 21:55:11,177 - aiogram.event - INFO - Update id=654608293 is handled. Duration 1076 ms by bot id=7637077946
+2025-07-13 21:55:16,840 - root - INFO - Product image processed for user 7885326735
+2025-07-13 21:55:16,840 - aiogram.event - INFO - Update id=654608294 is handled. Duration 835 ms by bot id=7637077946
+2025-07-13 21:55:34,310 - root - INFO - Sales report for user 7885326735 added to database.
+2025-07-13 21:55:36,450 - root - INFO - Report successfully sent to group AutoShop by user 7885326735
+2025-07-13 21:55:36,628 - aiogram.event - INFO - Update id=654608295 is handled. Duration 2567 ms by bot id=7637077946
+2025-07-13 21:55:50,983 - root - ERROR - Error getting seller profile: too many values to unpack (expected 16)
+2025-07-13 21:55:51,212 - aiogram.event - INFO - Update id=654608296 is handled. Duration 231 ms by bot id=7637077946
+2025-07-13 21:55:54,436 - root - ERROR - Error getting seller profile: too many values to unpack (expected 16)
+2025-07-13 21:55:54,720 - aiogram.event - INFO - Update id=654608297 is handled. Duration 286 ms by bot id=7637077946
+2025-07-13 21:56:13,410 - root - INFO - Report status updated to 'rejected' for group_message_id 2126.
+2025-07-13 21:56:13,806 - root - INFO - Report rejected and deleted by helper 8039363087
+2025-07-13 21:56:13,806 - aiogram.event - INFO - Update id=654608298 is handled. Duration 600 ms by bot id=7637077946
+2025-07-13 21:56:26,223 - aiogram.event - INFO - Update id=654608299 is handled. Duration 944 ms by bot id=7637077946
+2025-07-13 21:56:51,490 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:56:51,746 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:56:51,746 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:56:51,748 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:56:54,421 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:56:54,421 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:56:54,421 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:56:54,423 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 21:56:54,423 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 21:56:54,423 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 21:56:54,423 - root - INFO - 👨‍💼 Sotuvchi profili: Telegram ID orqali to'liq ma'lumotlar
+2025-07-13 21:56:54,423 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 21:56:54,425 - root - INFO - Admin router initialized successfully
+2025-07-13 21:56:54,430 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:56:54,597 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:56:54,597 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:56:55,431 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:57:44,965 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 21:57:45,223 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 21:57:45,224 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:57:45,225 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 21:57:47,885 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 21:57:47,886 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 21:57:47,886 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 21:57:47,887 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 21:57:47,887 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 21:57:47,887 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 21:57:47,887 - root - INFO - 👨‍💼 Sotuvchi profili: Telegram ID orqali to'liq ma'lumotlar
+2025-07-13 21:57:47,887 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 21:57:47,889 - root - INFO - Admin router initialized successfully
+2025-07-13 21:57:47,893 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 21:57:48,050 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 21:57:48,050 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 21:57:48,782 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 21:57:51,507 - root - INFO - Mavjud foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) botga kirdi.
+2025-07-13 21:57:51,507 - aiogram.event - INFO - Update id=654608300 is handled. Duration 439 ms by bot id=7637077946
+2025-07-13 21:57:53,126 - root - INFO - Foydalanuvchi 7885326735 hisobot topshirish jarayonini boshladi
+2025-07-13 21:57:53,126 - aiogram.event - INFO - Update id=654608301 is handled. Duration 170 ms by bot id=7637077946
+2025-07-13 21:57:55,411 - root - INFO - Foydalanuvchi 7885326735 hisobot topshirishni bekor qildi
+2025-07-13 21:57:55,411 - aiogram.event - INFO - Update id=654608302 is handled. Duration 620 ms by bot id=7637077946
+2025-07-13 21:57:59,335 - aiogram.event - INFO - Update id=654608303 is handled. Duration 204 ms by bot id=7637077946
+2025-07-13 21:58:02,561 - root - INFO - Foydalanuvchi 7885326735 hisobot topshirish jarayonini boshladi
+2025-07-13 21:58:02,561 - aiogram.event - INFO - Update id=654608304 is handled. Duration 193 ms by bot id=7637077946
+2025-07-13 21:58:08,212 - root - INFO - Foydalanuvchi 7885326735 hisobot topshirishni bekor qildi
+2025-07-13 21:58:08,212 - aiogram.event - INFO - Update id=654608305 is handled. Duration 699 ms by bot id=7637077946
+2025-07-13 21:59:10,011 - aiogram.event - INFO - Update id=654608306 is handled. Duration 238 ms by bot id=7637077946
+2025-07-13 21:59:43,598 - root - INFO - Mavjud foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) botga kirdi.
+2025-07-13 21:59:43,598 - aiogram.event - INFO - Update id=654608307 is handled. Duration 169 ms by bot id=7637077946
+2025-07-13 22:00:40,716 - root - INFO - Foydalanuvchi 7885326735 hisobot topshirish jarayonini boshladi
+2025-07-13 22:00:40,716 - aiogram.event - INFO - Update id=654608308 is handled. Duration 302 ms by bot id=7637077946
+2025-07-13 22:01:04,294 - root - INFO - Mijoz ismi qayta ishlandi: Bu Test
+2025-07-13 22:01:04,294 - aiogram.event - INFO - Update id=654608309 is handled. Duration 619 ms by bot id=7637077946
+2025-07-13 22:01:17,478 - root - INFO - Telefon raqami qayta ishlandi: +998950051545
+2025-07-13 22:01:17,478 - aiogram.event - INFO - Update id=654608310 is handled. Duration 2366 ms by bot id=7637077946
+2025-07-13 22:03:17,159 - root - INFO - Mahsulot turi qayta ishlandi: Bu test
+2025-07-13 22:03:17,159 - aiogram.event - INFO - Update id=654608311 is handled. Duration 992 ms by bot id=7637077946
+2025-07-13 22:03:29,540 - aiogram.event - INFO - Update id=654608312 is handled. Duration 745 ms by bot id=7637077946
+2025-07-13 22:03:47,546 - aiogram.event - INFO - Update id=654608313 is handled. Duration 551 ms by bot id=7637077946
+2025-07-13 22:04:04,158 - root - INFO - Mijoz manzili qayta ishlandi: Bu manzil uchun test
+2025-07-13 22:04:04,158 - aiogram.event - INFO - Update id=654608314 is handled. Duration 669 ms by bot id=7637077946
+2025-07-13 22:04:08,566 - root - INFO - Shartnoma ID qayta ishlandi: Ad837272
+2025-07-13 22:04:08,566 - aiogram.event - INFO - Update id=654608315 is handled. Duration 728 ms by bot id=7637077946
+2025-07-13 22:04:21,159 - root - INFO - Shartnoma summasi qayta ishlandi: 788000 -> 788.000
+2025-07-13 22:04:21,159 - aiogram.event - INFO - Update id=654608316 is handled. Duration 2866 ms by bot id=7637077946
+2025-07-13 22:04:36,067 - root - INFO - Mahsulot rasmi qayta ishlandi: 7885326735
+2025-07-13 22:04:36,067 - aiogram.event - INFO - Update id=654608317 is handled. Duration 1488 ms by bot id=7637077946
+2025-07-13 22:04:50,990 - root - INFO - Sales report for user 7885326735 added to database.
+2025-07-13 22:04:51,311 - root - INFO - Hisobot muvaffaqiyatli yuborildi: AutoShop - 7885326735
+2025-07-13 22:04:51,459 - aiogram.event - INFO - Update id=654608318 is handled. Duration 682 ms by bot id=7637077946
+2025-07-13 22:05:03,298 - root - ERROR - Sotuvchi profil ma'lumotlarini olishda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:05:03,845 - aiogram.event - INFO - Update id=654608319 is handled. Duration 550 ms by bot id=7637077946
+2025-07-13 22:05:08,957 - root - INFO - Report status updated to 'confirmed' for group_message_id 2127.
+2025-07-13 22:05:08,983 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 22:05:11,660 - root - INFO - 📄 Spreadsheet ochildi: Auto Shop
+2025-07-13 22:05:13,575 - root - INFO - 📋 Worksheet topildi: 'AutoShop'
+2025-07-13 22:05:20,304 - root - INFO - ✅ Hisobot #2 muvaffaqiyatli saqlandi: Hayotbek - Bu test - 788.000
+2025-07-13 22:05:20,304 - root - INFO - Hisobot muvaffaqiyatli Google Sheets'ga saqlandi: Auto Shop uchun
+2025-07-13 22:05:20,705 - aiogram.event - INFO - Update id=654608320 is handled. Duration 11985 ms by bot id=7637077946
+2025-07-13 22:08:29,697 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:08:29,961 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:08:29,962 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:08:29,963 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:08:32,594 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:08:32,594 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:08:32,594 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:08:32,596 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:08:32,596 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:08:32,596 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:08:32,596 - root - INFO - 👨‍💼 Sotuvchi profili: Telegram ID orqali to'liq ma'lumotlar
+2025-07-13 22:08:32,596 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:08:32,597 - root - INFO - Admin router initialized successfully
+2025-07-13 22:08:32,602 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:08:32,767 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:08:32,767 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:08:33,205 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:08:39,692 - root - INFO - Mavjud foydalanuvchi 7885326735 (*:-:*-:——:-*:-:*) botga kirdi.
+2025-07-13 22:08:39,692 - aiogram.event - INFO - Update id=654608321 is handled. Duration 428 ms by bot id=7637077946
+2025-07-13 22:08:41,512 - root - INFO - Foydalanuvchi 7885326735 hisobot topshirish jarayonini boshladi
+2025-07-13 22:08:41,512 - aiogram.event - INFO - Update id=654608322 is handled. Duration 228 ms by bot id=7637077946
+2025-07-13 22:09:04,452 - root - INFO - Mijoz ismi qayta ishlandi: Alisher sulaymonov
+2025-07-13 22:09:04,452 - aiogram.event - INFO - Update id=654608323 is handled. Duration 1588 ms by bot id=7637077946
+2025-07-13 22:09:29,663 - root - INFO - Telefon raqami qayta ishlandi: +998 91 992 12 73
+2025-07-13 22:09:29,663 - aiogram.event - INFO - Update id=654608324 is handled. Duration 713 ms by bot id=7637077946
+2025-07-13 22:09:33,674 - aiogram.event - INFO - Update id=654608325 is handled. Duration 406 ms by bot id=7637077946
+2025-07-13 22:09:52,025 - root - INFO - Qo'shimcha telefon raqami qayta ishlandi: +998 99 992-12-73
+2025-07-13 22:09:52,026 - aiogram.event - INFO - Update id=654608326 is handled. Duration 696 ms by bot id=7637077946
+2025-07-13 22:10:03,860 - root - INFO - Mahsulot turi qayta ishlandi: 4 Ta in 1 Bosch
+2025-07-13 22:10:03,860 - aiogram.event - INFO - Update id=654608327 is handled. Duration 1919 ms by bot id=7637077946
+2025-07-13 22:10:17,900 - root - INFO - Mijoz manzili qayta ishlandi: Toshkent shax. yunusobot tum.
+2025-07-13 22:10:17,900 - aiogram.event - INFO - Update id=654608328 is handled. Duration 564 ms by bot id=7637077946
+2025-07-13 22:10:47,904 - root - INFO - Shartnoma ID qayta ishlandi: 20036918
+2025-07-13 22:10:47,904 - aiogram.event - INFO - Update id=654608329 is handled. Duration 553 ms by bot id=7637077946
+2025-07-13 22:10:56,536 - root - INFO - Shartnoma summasi qayta ishlandi: 800000 -> 800.000
+2025-07-13 22:10:56,536 - aiogram.event - INFO - Update id=654608330 is handled. Duration 3062 ms by bot id=7637077946
+2025-07-13 22:11:04,722 - root - INFO - Mahsulot rasmi qayta ishlandi: 7885326735
+2025-07-13 22:11:04,722 - aiogram.event - INFO - Update id=654608331 is handled. Duration 811 ms by bot id=7637077946
+2025-07-13 22:11:11,292 - root - INFO - Sales report for user 7885326735 added to database.
+2025-07-13 22:11:11,793 - root - INFO - Hisobot muvaffaqiyatli yuborildi: AutoShop - 7885326735
+2025-07-13 22:11:12,026 - aiogram.event - INFO - Update id=654608332 is handled. Duration 982 ms by bot id=7637077946
+2025-07-13 22:11:36,582 - root - ERROR - Sotuvchi profil ma'lumotlarini olishda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:11:36,745 - aiogram.event - INFO - Update id=654608333 is handled. Duration 165 ms by bot id=7637077946
+2025-07-13 22:11:40,999 - root - ERROR - Sotuvchi profil ma'lumotlarini olishda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:11:41,160 - aiogram.event - INFO - Update id=654608334 is handled. Duration 164 ms by bot id=7637077946
+2025-07-13 22:12:08,224 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:12:08,477 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:12:08,477 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:12:08,478 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:12:11,060 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:12:11,060 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:12:11,060 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:12:11,062 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:12:11,062 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:12:11,062 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:12:11,062 - root - INFO - 👨‍💼 Sotuvchi profili: Telegram ID orqali to'liq ma'lumotlar
+2025-07-13 22:12:11,062 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:12:11,063 - root - INFO - Admin router initialized successfully
+2025-07-13 22:12:11,068 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:12:11,230 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:12:11,230 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:12:12,001 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:12:12,602 - root - ERROR - Sotuvchi profil ma'lumotlarini olishda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:12:13,100 - aiogram.event - INFO - Update id=654608335 is handled. Duration 501 ms by bot id=7637077946
+2025-07-13 22:12:19,603 - root - INFO - Report status updated to 'confirmed' for group_message_id 2128.
+2025-07-13 22:12:19,630 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 22:12:21,530 - root - INFO - 📄 Spreadsheet ochildi: Auto Shop
+2025-07-13 22:12:22,436 - root - INFO - 📋 Worksheet topildi: 'AutoShop'
+2025-07-13 22:12:27,961 - root - INFO - ✅ Hisobot #3 muvaffaqiyatli saqlandi: Hayotbek - 4 Ta in 1 Bosch - 800.000
+2025-07-13 22:12:27,962 - root - INFO - Hisobot muvaffaqiyatli Google Sheets'ga saqlandi: Auto Shop uchun
+2025-07-13 22:12:28,130 - aiogram.event - INFO - Update id=654608336 is handled. Duration 8839 ms by bot id=7637077946
+2025-07-13 22:16:10,588 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 22:16:10,588 - aiogram.event - INFO - Update id=654608337 is handled. Duration 179 ms by bot id=7637077946
+2025-07-13 22:16:16,381 - aiogram.event - INFO - Update id=654608338 is handled. Duration 842 ms by bot id=7637077946
+2025-07-13 22:16:19,855 - aiogram.event - INFO - Update id=654608339 is handled. Duration 342 ms by bot id=7637077946
+2025-07-13 22:16:21,695 - aiogram.event - INFO - Update id=654608340 is handled. Duration 369 ms by bot id=7637077946
+2025-07-13 22:16:27,301 - aiogram.event - INFO - Update id=654608341 is handled. Duration 291 ms by bot id=7637077946
+2025-07-13 22:16:28,748 - aiogram.event - INFO - Update id=654608342 is handled. Duration 312 ms by bot id=7637077946
+2025-07-13 22:16:30,307 - aiogram.event - INFO - Update id=654608343 is not handled. Duration 3 ms by bot id=7637077946
+2025-07-13 22:16:35,881 - aiogram.event - INFO - Update id=654608344 is not handled. Duration 7 ms by bot id=7637077946
+2025-07-13 22:16:36,996 - aiogram.event - INFO - Update id=654608345 is not handled. Duration 4 ms by bot id=7637077946
+2025-07-13 22:16:40,752 - aiogram.event - INFO - Update id=654608346 is handled. Duration 368 ms by bot id=7637077946
+2025-07-13 22:16:45,239 - aiogram.event - INFO - Update id=654608347 is handled. Duration 441 ms by bot id=7637077946
+2025-07-13 22:16:46,271 - aiogram.event - INFO - Update id=654608348 is handled. Duration 398 ms by bot id=7637077946
+2025-07-13 22:16:48,962 - aiogram.event - INFO - Update id=654608349 is handled. Duration 434 ms by bot id=7637077946
+2025-07-13 22:17:12,678 - aiogram.event - INFO - Update id=654608351 is handled. Duration 590 ms by bot id=7637077946
+2025-07-13 22:17:12,889 - aiogram.event - INFO - Update id=654608350 is handled. Duration 802 ms by bot id=7637077946
+2025-07-13 22:17:12,982 - root - INFO - Admin 8039363087 admin panelga kirdi
+2025-07-13 22:17:12,983 - aiogram.event - INFO - Update id=654608353 is handled. Duration 162 ms by bot id=7637077946
+2025-07-13 22:17:12,991 - aiogram.event - INFO - Update id=654608352 is handled. Duration 903 ms by bot id=7637077946
+2025-07-13 22:17:18,034 - aiogram.event - INFO - Update id=654608354 is handled. Duration 347 ms by bot id=7637077946
+2025-07-13 22:17:23,444 - aiogram.event - INFO - Update id=654608355 is handled. Duration 474 ms by bot id=7637077946
+2025-07-13 22:17:25,068 - aiogram.event - INFO - Update id=654608356 is handled. Duration 411 ms by bot id=7637077946
+2025-07-13 22:17:30,694 - aiogram.event - INFO - Update id=654608357 is not handled. Duration 3 ms by bot id=7637077946
+2025-07-13 22:17:35,297 - aiogram.event - INFO - Update id=654608358 is handled. Duration 334 ms by bot id=7637077946
+2025-07-13 22:17:45,510 - aiogram.event - INFO - Update id=654608359 is handled. Duration 267 ms by bot id=7637077946
+2025-07-13 22:17:55,622 - aiogram.event - INFO - Update id=654608360 is handled. Duration 405 ms by bot id=7637077946
+2025-07-13 22:18:06,836 - aiogram.event - INFO - Update id=654608361 is handled. Duration 739 ms by bot id=7637077946
+2025-07-13 22:18:08,693 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirish jarayonini boshladi
+2025-07-13 22:18:08,694 - aiogram.event - INFO - Update id=654608362 is handled. Duration 179 ms by bot id=7637077946
+2025-07-13 22:18:09,698 - aiogram.event - INFO - Update id=654608363 is handled. Duration 178 ms by bot id=7637077946
+2025-07-13 22:18:13,261 - aiogram.event - INFO - Update id=654608364 is handled. Duration 172 ms by bot id=7637077946
+2025-07-13 22:18:20,279 - aiogram.event - INFO - Update id=654608365 is handled. Duration 315 ms by bot id=7637077946
+2025-07-13 22:18:21,474 - aiogram.event - INFO - Update id=654608366 is handled. Duration 267 ms by bot id=7637077946
+2025-07-13 22:18:27,048 - root - INFO - Mijoz ismi qayta ishlandi: /admin
+2025-07-13 22:18:27,048 - aiogram.event - INFO - Update id=654608367 is handled. Duration 1335 ms by bot id=7637077946
+2025-07-13 22:18:29,510 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirishni bekor qildi
+2025-07-13 22:18:29,510 - aiogram.event - INFO - Update id=654608368 is handled. Duration 619 ms by bot id=7637077946
+2025-07-13 22:18:38,141 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirish jarayonini boshladi
+2025-07-13 22:18:38,142 - aiogram.event - INFO - Update id=654608369 is handled. Duration 212 ms by bot id=7637077946
+2025-07-13 22:18:43,977 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirishni bekor qildi
+2025-07-13 22:18:43,977 - aiogram.event - INFO - Update id=654608370 is handled. Duration 1582 ms by bot id=7637077946
+2025-07-13 22:20:19,836 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:20:20,101 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:20:20,101 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:20:20,103 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:20:23,029 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:20:23,029 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:20:23,029 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:20:23,031 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:20:23,032 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Qo'shimcha telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:20:23,032 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:20:23,032 - root - INFO - 📱 Qo'shimcha telefon: Guruhga yuboriladi, Google Sheets'ga saqlanmaydi
+2025-07-13 22:20:23,032 - root - INFO - 👨‍💼 Sotuvchi profili: To'liq batafsil ma'lumotlar
+2025-07-13 22:20:23,032 - root - INFO - 🔗 Sotuvchi bilan bog'lanish: Helper kabi ishlaydi
+2025-07-13 22:20:23,032 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:20:23,034 - root - INFO - Admin router initialized successfully
+2025-07-13 22:20:23,040 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:20:23,218 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:20:23,218 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:20:23,748 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:20:35,163 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirish jarayonini boshladi
+2025-07-13 22:20:35,163 - aiogram.event - INFO - Update id=654608371 is handled. Duration 459 ms by bot id=7637077946
+2025-07-13 22:20:38,852 - root - INFO - Mijoz ismi qayta ishlandi: Snsns sksns
+2025-07-13 22:20:38,852 - aiogram.event - INFO - Update id=654608372 is handled. Duration 509 ms by bot id=7637077946
+2025-07-13 22:20:44,172 - root - INFO - Telefon raqami qayta ishlandi: 998901234567
+2025-07-13 22:20:44,172 - aiogram.event - INFO - Update id=654608373 is handled. Duration 501 ms by bot id=7637077946
+2025-07-13 22:20:46,059 - aiogram.event - INFO - Update id=654608374 is handled. Duration 351 ms by bot id=7637077946
+2025-07-13 22:20:49,799 - root - INFO - Mahsulot turi qayta ishlandi: Jwja sjsja ksns
+2025-07-13 22:20:49,799 - aiogram.event - INFO - Update id=654608375 is handled. Duration 531 ms by bot id=7637077946
+2025-07-13 22:20:53,894 - root - INFO - Mijoz manzili qayta ishlandi: Iwkw akakaka kakakw
+2025-07-13 22:20:53,894 - aiogram.event - INFO - Update id=654608376 is handled. Duration 457 ms by bot id=7637077946
+2025-07-13 22:20:57,908 - root - INFO - Shartnoma ID qayta ishlandi: Iwowkwkwp
+2025-07-13 22:20:57,908 - aiogram.event - INFO - Update id=654608377 is handled. Duration 512 ms by bot id=7637077946
+2025-07-13 22:21:05,850 - root - INFO - Shartnoma summasi qayta ishlandi: 500000 -> 500.000
+2025-07-13 22:21:05,850 - aiogram.event - INFO - Update id=654608378 is handled. Duration 3502 ms by bot id=7637077946
+2025-07-13 22:21:12,508 - root - INFO - Mahsulot rasmi qayta ishlandi: 8039363087
+2025-07-13 22:21:12,509 - aiogram.event - INFO - Update id=654608379 is handled. Duration 775 ms by bot id=7637077946
+2025-07-13 22:21:14,297 - root - INFO - Sales report for user 8039363087 added to database.
+2025-07-13 22:21:14,653 - root - INFO - Hisobot muvaffaqiyatli yuborildi: Sinov Gurux - 8039363087
+2025-07-13 22:21:14,796 - aiogram.event - INFO - Update id=654608380 is handled. Duration 677 ms by bot id=7637077946
+2025-07-13 22:21:22,279 - root - ERROR - Hisobot ma'lumotlarini formatlashda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:21:22,279 - root - ERROR - Hisobot ma'lumotlarini formatlashda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:21:22,604 - root - INFO - Sotuvchi profili ko'rsatildi: Toshmat (8039363087)
+2025-07-13 22:21:22,604 - aiogram.event - INFO - Update id=654608381 is handled. Duration 328 ms by bot id=7637077946
+2025-07-13 22:23:18,825 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:23:19,086 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:23:19,086 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:23:19,087 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:23:21,600 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:23:21,600 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:23:21,600 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:23:21,602 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:23:21,602 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Qo'shimcha telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:23:21,602 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:23:21,602 - root - INFO - 📱 Qo'shimcha telefon: Guruhga yuboriladi, Google Sheets'ga saqlanmaydi
+2025-07-13 22:23:21,602 - root - INFO - 👨‍💼 Sotuvchi profili: To'liq batafsil ma'lumotlar
+2025-07-13 22:23:21,602 - root - INFO - 🔗 Sotuvchi bilan bog'lanish: Helper kabi ishlaydi
+2025-07-13 22:23:21,602 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:23:21,603 - root - INFO - Admin router initialized successfully
+2025-07-13 22:23:21,607 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:23:21,777 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:23:21,777 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:23:22,664 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:24:35,445 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirish jarayonini boshladi
+2025-07-13 22:24:35,445 - aiogram.event - INFO - Update id=654608382 is handled. Duration 418 ms by bot id=7637077946
+2025-07-13 22:24:39,418 - root - INFO - Mijoz ismi qayta ishlandi: Msmnssp skska
+2025-07-13 22:24:39,418 - aiogram.event - INFO - Update id=654608383 is handled. Duration 548 ms by bot id=7637077946
+2025-07-13 22:24:48,050 - root - INFO - Telefon raqami qayta ishlandi: 998950051545
+2025-07-13 22:24:48,050 - aiogram.event - INFO - Update id=654608384 is handled. Duration 724 ms by bot id=7637077946
+2025-07-13 22:24:49,183 - aiogram.event - INFO - Update id=654608385 is handled. Duration 327 ms by bot id=7637077946
+2025-07-13 22:24:52,858 - root - INFO - Mahsulot turi qayta ishlandi: Jsjsnsn sksm jakamee
+2025-07-13 22:24:52,859 - aiogram.event - INFO - Update id=654608386 is handled. Duration 657 ms by bot id=7637077946
+2025-07-13 22:24:55,239 - root - INFO - Mijoz manzili qayta ishlandi: Jsjsnsn sksm jakamee
+2025-07-13 22:24:55,239 - aiogram.event - INFO - Update id=654608387 is handled. Duration 587 ms by bot id=7637077946
+2025-07-13 22:24:58,926 - root - INFO - Shartnoma ID qayta ishlandi: Jsjsnsn sksm jakamee
+2025-07-13 22:24:58,926 - aiogram.event - INFO - Update id=654608388 is handled. Duration 450 ms by bot id=7637077946
+2025-07-13 22:25:06,063 - root - INFO - Shartnoma summasi qayta ishlandi: 500000 -> 500.000
+2025-07-13 22:25:06,063 - aiogram.event - INFO - Update id=654608389 is handled. Duration 3065 ms by bot id=7637077946
+2025-07-13 22:25:11,405 - root - INFO - Mahsulot rasmi qayta ishlandi: 8039363087
+2025-07-13 22:25:11,405 - aiogram.event - INFO - Update id=654608390 is handled. Duration 546 ms by bot id=7637077946
+2025-07-13 22:25:14,710 - root - INFO - Sales report for user 8039363087 added to database.
+2025-07-13 22:25:15,202 - root - INFO - Hisobot muvaffaqiyatli yuborildi: Sinov Gurux - 8039363087
+2025-07-13 22:25:15,412 - aiogram.event - INFO - Update id=654608391 is handled. Duration 2145 ms by bot id=7637077946
+2025-07-13 22:27:18,436 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:27:18,701 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:27:18,701 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:27:18,703 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:27:21,062 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:27:21,062 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:27:21,062 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:27:21,063 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:27:21,063 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Qo'shimcha telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:27:21,063 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:27:21,063 - root - INFO - 📱 Qo'shimcha telefon: Guruhga yuboriladi, Google Sheets'ga saqlanmaydi
+2025-07-13 22:27:21,063 - root - INFO - 👨‍💼 Sotuvchi profili: To'liq batafsil ma'lumotlar
+2025-07-13 22:27:21,063 - root - INFO - 🔗 Sotuvchi bilan bog'lanish: Helper kabi ishlaydi
+2025-07-13 22:27:21,063 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:27:21,065 - root - INFO - Admin router initialized successfully
+2025-07-13 22:27:21,069 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:27:21,237 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:27:21,237 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:27:21,738 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:27:27,825 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirish jarayonini boshladi
+2025-07-13 22:27:27,825 - aiogram.event - INFO - Update id=654608392 is handled. Duration 702 ms by bot id=7637077946
+2025-07-13 22:27:30,523 - root - INFO - Mijoz ismi qayta ishlandi: dsfasdf dsfasf
+2025-07-13 22:27:30,524 - aiogram.event - INFO - Update id=654608393 is handled. Duration 527 ms by bot id=7637077946
+2025-07-13 22:27:35,174 - root - INFO - Telefon raqami qayta ishlandi: +998901234567
+2025-07-13 22:27:35,174 - aiogram.event - INFO - Update id=654608394 is handled. Duration 799 ms by bot id=7637077946
+2025-07-13 22:27:36,950 - aiogram.event - INFO - Update id=654608395 is handled. Duration 318 ms by bot id=7637077946
+2025-07-13 22:27:39,412 - root - INFO - Mahsulot turi qayta ishlandi: dsafasdf sd ds fa
+2025-07-13 22:27:39,412 - aiogram.event - INFO - Update id=654608396 is handled. Duration 665 ms by bot id=7637077946
+2025-07-13 22:27:42,133 - root - INFO - Mijoz manzili qayta ishlandi: safasdfas  sd afsd
+2025-07-13 22:27:42,134 - aiogram.event - INFO - Update id=654608397 is handled. Duration 563 ms by bot id=7637077946
+2025-07-13 22:27:50,930 - root - INFO - Shartnoma ID qayta ishlandi: 2342dewd23
+2025-07-13 22:27:50,930 - aiogram.event - INFO - Update id=654608398 is handled. Duration 6551 ms by bot id=7637077946
+2025-07-13 22:27:55,457 - root - INFO - Shartnoma summasi qayta ishlandi: 400000 -> 400.000
+2025-07-13 22:27:55,458 - aiogram.event - INFO - Update id=654608399 is handled. Duration 3304 ms by bot id=7637077946
+2025-07-13 22:28:02,873 - root - INFO - Mahsulot rasmi qayta ishlandi: 8039363087
+2025-07-13 22:28:02,873 - aiogram.event - INFO - Update id=654608400 is handled. Duration 559 ms by bot id=7637077946
+2025-07-13 22:28:04,735 - root - INFO - Sales report for user 8039363087 added to database.
+2025-07-13 22:28:05,091 - root - INFO - Hisobot muvaffaqiyatli yuborildi: Sinov Gurux - 8039363087
+2025-07-13 22:28:05,233 - aiogram.event - INFO - Update id=654608401 is handled. Duration 716 ms by bot id=7637077946
+2025-07-13 22:28:10,351 - root - ERROR - Hisobot ma'lumotlarini formatlashda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:28:10,352 - root - ERROR - Hisobot ma'lumotlarini formatlashda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:28:10,352 - root - ERROR - Hisobot ma'lumotlarini formatlashda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:28:10,352 - root - ERROR - Hisobot ma'lumotlarini formatlashda xatolik: too many values to unpack (expected 16)
+2025-07-13 22:28:10,709 - root - INFO - Sotuvchi profili ko'rsatildi: Toshmat (8039363087)
+2025-07-13 22:28:10,709 - aiogram.event - INFO - Update id=654608402 is handled. Duration 365 ms by bot id=7637077946
+2025-07-13 22:34:05,068 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:34:05,155 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2765)
+2025-07-13 22:34:05,155 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7637077946)
+2025-07-13 22:34:05,332 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:34:05,332 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:34:05,333 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:34:08,096 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:34:08,096 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:34:08,096 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:34:08,098 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:34:08,098 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Qo'shimcha telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:34:08,098 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:34:08,098 - root - INFO - 📱 Qo'shimcha telefon: Guruhga yuboriladi, Google Sheets'ga saqlanmaydi
+2025-07-13 22:34:08,098 - root - INFO - 👨‍💼 Sotuvchi profili: To'liq batafsil ma'lumotlar
+2025-07-13 22:34:08,098 - root - INFO - 🔗 Sotuvchi bilan bog'lanish: Helper kabi ishlaydi
+2025-07-13 22:34:08,098 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:34:08,100 - root - INFO - Admin router initialized successfully
+2025-07-13 22:34:08,104 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:34:08,268 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:34:08,269 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:34:09,003 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:34:23,583 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:34:23,848 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:34:23,848 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:34:23,849 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:35:50,814 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:35:50,814 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:35:50,815 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:35:50,816 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:35:50,816 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Qo'shimcha telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:35:50,816 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:35:50,816 - root - INFO - 📱 Qo'shimcha telefon: Guruhga yuboriladi, Google Sheets'ga saqlanmaydi
+2025-07-13 22:35:50,816 - root - INFO - 👨‍💼 Sotuvchi profili: To'liq batafsil ma'lumotlar
+2025-07-13 22:35:50,816 - root - INFO - 🔗 Sotuvchi bilan bog'lanish: Helper kabi ishlaydi
+2025-07-13 22:35:50,816 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:35:50,818 - root - INFO - Admin router initialized successfully
+2025-07-13 22:35:50,822 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:35:50,980 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:35:50,981 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:35:51,373 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:36:00,554 - root - INFO - Foydalanuvchi 8039363087 hisobot topshirish jarayonini boshladi
+2025-07-13 22:36:00,554 - aiogram.event - INFO - Update id=654608403 is handled. Duration 439 ms by bot id=7637077946
+2025-07-13 22:36:03,608 - root - INFO - Mijoz ismi qayta ishlandi: sdfdasf dsafsdf
+2025-07-13 22:36:03,608 - aiogram.event - INFO - Update id=654608404 is handled. Duration 932 ms by bot id=7637077946
+2025-07-13 22:36:11,458 - root - INFO - Telefon raqami qayta ishlandi: +998999999999
+2025-07-13 22:36:11,458 - aiogram.event - INFO - Update id=654608405 is handled. Duration 796 ms by bot id=7637077946
+2025-07-13 22:36:16,791 - aiogram.event - INFO - Update id=654608406 is handled. Duration 497 ms by bot id=7637077946
+2025-07-13 22:36:20,043 - root - INFO - Mahsulot turi qayta ishlandi: fds asdf dsa dsa
+2025-07-13 22:36:20,043 - aiogram.event - INFO - Update id=654608407 is handled. Duration 1075 ms by bot id=7637077946
+2025-07-13 22:36:23,129 - root - INFO - Mijoz manzili qayta ishlandi: dsafsdfd asdf dsa sfd asf
+2025-07-13 22:36:23,130 - aiogram.event - INFO - Update id=654608408 is handled. Duration 641 ms by bot id=7637077946
+2025-07-13 22:36:29,443 - root - INFO - Shartnoma ID qayta ishlandi: sdfadsf dsaf sdaf sadf
+2025-07-13 22:36:29,443 - aiogram.event - INFO - Update id=654608409 is handled. Duration 3445 ms by bot id=7637077946
+2025-07-13 22:36:36,644 - root - INFO - Shartnoma summasi qayta ishlandi: 5000000 -> 5.000.000
+2025-07-13 22:36:36,644 - aiogram.event - INFO - Update id=654608410 is handled. Duration 3170 ms by bot id=7637077946
+2025-07-13 22:36:42,875 - root - INFO - Mahsulot rasmi qayta ishlandi: 8039363087
+2025-07-13 22:36:42,875 - aiogram.event - INFO - Update id=654608411 is handled. Duration 463 ms by bot id=7637077946
+2025-07-13 22:36:44,847 - root - INFO - Sales report for user 8039363087 added to database.
+2025-07-13 22:36:45,167 - root - INFO - Hisobot muvaffaqiyatli yuborildi: Sinov Gurux - 8039363087
+2025-07-13 22:36:45,333 - aiogram.event - INFO - Update id=654608412 is handled. Duration 670 ms by bot id=7637077946
+2025-07-13 22:38:01,070 - aiogram.event - INFO - Update id=654608413 is not handled. Duration 1 ms by bot id=7637077946
+2025-07-13 22:38:09,810 - aiogram.event - INFO - Update id=654608414 is handled. Duration 133 ms by bot id=7637077946
+2025-07-13 22:38:12,246 - aiogram.event - INFO - Update id=654608415 is handled. Duration 155 ms by bot id=7637077946
+2025-07-13 22:38:16,197 - aiogram.event - INFO - Update id=654608416 is handled. Duration 270 ms by bot id=7637077946
+2025-07-13 22:38:16,620 - aiogram.event - INFO - Update id=654608417 is handled. Duration 492 ms by bot id=7637077946
+2025-07-13 22:38:32,282 - aiogram.event - INFO - Update id=654608418 is handled. Duration 136 ms by bot id=7637077946
+2025-07-13 22:38:41,790 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:38:42,053 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:38:42,053 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:38:42,054 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
+2025-07-13 22:38:44,485 - root - INFO - 🚀 Google Sheets Integration moduli muvaffaqiyatli yuklandi
+2025-07-13 22:38:44,485 - root - INFO - 📊 Ma'lumotlar saqlash tartibi: Birinchi hisobot #1 (eng tepada), keyingisi #2 (pastda)
+2025-07-13 22:38:44,485 - root - INFO - 📋 Ustunlar: № | Mijoz | Telefon | Mahsulot | Jo'natma | Manzil | Sana | Hisobot | Yuborilgan | Shartnoma | Summa | Sotuvchi
+2025-07-13 22:38:44,487 - root - INFO - 📝 Otchot router muvaffaqiyatli yuklandi
+2025-07-13 22:38:44,487 - root - INFO - 🔄 Hisobot jarayoni: Mijoz → Telefon → Qo'shimcha telefon → Mahsulot → Manzil → Shartnoma ID → Summa → Rasm → Tasdiqlash
+2025-07-13 22:38:44,487 - root - INFO - 💰 Summa formatlash: 500000 → 500.000
+2025-07-13 22:38:44,487 - root - INFO - 📱 Qo'shimcha telefon: Guruhga yuboriladi, Google Sheets'ga saqlanmaydi
+2025-07-13 22:38:44,487 - root - INFO - 👨‍💼 Sotuvchi profili: To'liq batafsil ma'lumotlar
+2025-07-13 22:38:44,487 - root - INFO - 🔗 Sotuvchi bilan bog'lanish: Helper kabi ishlaydi
+2025-07-13 22:38:44,487 - root - INFO - 🔧 Optimallashtirilgan va to'liq tangilangan versiya
+2025-07-13 22:38:44,489 - root - INFO - Admin router initialized successfully
+2025-07-13 22:38:44,493 - root - INFO - Database 'bot_data.db' initialized successfully with all tables.
+2025-07-13 22:38:44,659 - root - INFO - 🤖 Bot ishga tushmoqda...
+2025-07-13 22:38:44,660 - aiogram.dispatcher - INFO - Start polling
+2025-07-13 22:38:45,315 - aiogram.dispatcher - INFO - Run polling for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:38:47,071 - root - INFO - Report status updated to 'confirmed' for group_message_id 43.
+2025-07-13 22:38:47,097 - root - INFO - ✅ Google Sheets client muvaffaqiyatli yaratildi
+2025-07-13 22:38:49,124 - root - INFO - 📄 Spreadsheet ochildi: bot
+2025-07-13 22:38:49,484 - root - INFO - 📋 Worksheet topildi: 'Malumotlar'
+2025-07-13 22:38:53,318 - root - INFO - ✅ Hisobot #2 muvaffaqiyatli saqlandi: Toshmat - fds asdf dsa dsa - 5.000.000
+2025-07-13 22:38:53,318 - root - INFO - Hisobot muvaffaqiyatli Google Sheets'ga saqlandi: Muddatli uchun
+2025-07-13 22:38:53,538 - aiogram.event - INFO - Update id=654608419 is handled. Duration 7282 ms by bot id=7637077946
+2025-07-13 22:39:26,489 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-13 22:39:26,751 - root - INFO - 🛑 Bot to'xtatildi.
+2025-07-13 22:39:26,751 - aiogram.dispatcher - INFO - Polling stopped for bot @iDemosBot id=7637077946 - 'Bot'
+2025-07-13 22:39:26,752 - root - INFO - 🛑 Bot foydalanuvchi tomonidan to'xtatildi.
